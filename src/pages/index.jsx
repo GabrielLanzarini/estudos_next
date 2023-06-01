@@ -1,6 +1,5 @@
 import ClientComponent from "@/components/ClienteComponent"
 import { useEffect, useState } from "react"
-
 export default function index() {
     const [components, setComponents] = useState([])
     const [nomes, setNomes] = useState(["gabriel", "eduardo", "felipe", "lucas"])
@@ -18,7 +17,7 @@ export default function index() {
     }, [])
 
     return (
-        <div className="flex flex-col justify-center items-center w-screen h-screen bg-[#2f2f2f] text-white">
+        <div className="h-screen text-white flex flex-col justify-center items-center w-screen h-screen bg-[#2f2f2f] text-white">
             <h1 className="text-7xl mb-10 font-bold">Client Rendering</h1>
             <div className="flex gap-5 flex-wrap">
                 {components.map((a) => {
