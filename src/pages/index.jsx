@@ -17,7 +17,7 @@ export default function index() {
     }, [])
 
     return (
-        <div className="h-screen text-white flex flex-col justify-center items-center w-screen h-screen bg-[#2f2f2f] text-white">
+        <div className="flex flex-col justify-center items-center w-screen h-screen bg-[#2f2f2f] text-white">
             <h1 className="text-7xl mb-10 font-bold">Client Rendering</h1>
             <div className="flex gap-5 flex-wrap">
                 {components.map((a) => {

@@ -8,7 +8,7 @@ export default function cep_search() {
 
     const handleClickSearch = async () => {
         setcepInfos((await axios.get(baseUrl + cepvalue + "/json")).data)
-        console.log(cepInfos);
+        console.log(cepInfos)
     }
 
     const handleInput = (e) => {
@@ -22,9 +22,7 @@ export default function cep_search() {
             <button className="bg-white text-black w-100" onClick={handleClickSearch}>
                 Search
             </button>
-            <div>
-                
-            </div>
+            <div></div>
         </div>
     )
 }
